@@ -85,8 +85,6 @@ export class FuseNavigationService
         // Check if the key already being used
         if ( this._registry[key] )
         {
-            console.error(`The navigation with the key '${key}' already exists. Either unregister it first or use a unique key.`);
-
             return;
         }
 

@@ -22,7 +22,6 @@
                 <li><a [routerLink]="['/image']" class="smoothScroll">Instagram</a></li>
                 <li class="active"><a [routerLink]="['/city']" class="smoothScroll">Glimps of the City</a></li>
                 <li><a [routerLink]="['/rsvp']" class="smoothScroll">RSVP</a></li>
-
             </ul>
         </div>
 
@@ -45,21 +44,26 @@
 <section class="cms-main">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe title="gmap" height="260px" width="1170px" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=khandwa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe title="gmap" width="742" height="260" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=khandwa&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <video height="260px" width="1170px" autoplay muted>
+                            <source src="../../assets/images/harshal/videoplayback.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <video width="200px" autoplay muted>
-                <source src="../../assets/images/harshal/videoplayback.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </div>
 </section>

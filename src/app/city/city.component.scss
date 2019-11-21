@@ -460,19 +460,19 @@ input[type=submit]:focus {
 
 .mapouter {
   position: relative;
-  text-align: right;
+ // text-align: right;
   height: 260px;
-  width: 742px;
+  width: 1170px;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 260px;
-  width: 742px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-      filter: grayscale(100%);
+  width: 1170px;
+  // -webkit-filter: grayscale(100%);
+  // -moz-filter: grayscale(100%);
+  // -ms-filter: grayscale(100%);
+  // -o-filter: grayscale(100%);
+  //     filter: grayscale(100%);
 }
