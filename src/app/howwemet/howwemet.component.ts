@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-howwemet',
+  templateUrl: './howwemet.component.html',
+  styleUrls: ['./howwemet.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class HowWeMetComponent implements OnInit {
 
   constructor() {
       this.openMenu();

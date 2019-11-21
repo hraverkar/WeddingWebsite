@@ -24,7 +24,7 @@ import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
-import { AboutComponent } from './about/about.component';
+import { HowWeMetComponent } from './howwemet/howwemet.component';
 import { HomeComponent } from './home/home.component';
 import {ContactUsComponent} from "./contact-us/contact-us.component";
 import {ShopComponent} from "./shop/shop.component";
@@ -43,8 +43,8 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path      : 'about',
-        component: AboutComponent
+        path      : 'howwemet',
+        component: HowWeMetComponent
     },
     {
         path      : 'contact-us',
@@ -88,7 +88,7 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
         AppComponent,
-        AboutComponent,
+        HowWeMetComponent,
         HomeComponent,
         ContactUsComponent,
         ShopComponent,
