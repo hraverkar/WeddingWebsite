@@ -4,11 +4,11 @@ import * as $ from 'jquery';
 
 
 @Component({
-    selector: 'app-shop',
-    templateUrl: './shop.component.html',
-    styleUrls: ['./shop.component.scss']
+    selector: 'app-event',
+    templateUrl: './event.component.html',
+    styleUrls: ['./event.component.scss']
 })
-export class ShopComponent implements OnInit {
+export class EventComponent implements OnInit {
     constructor() {
         this.openMenu();
 

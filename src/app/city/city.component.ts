@@ -9,12 +9,12 @@ import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations/index';
 
 @Component({
-    selector   : 'login',
-    templateUrl: './login.component.html',
-    styleUrls  : ['./login.component.scss'],
+    selector   : 'city',
+    templateUrl: './city.component.html',
+    styleUrls  : ['./city.component.scss'],
     animations : fuseAnimations
 })
-export class LoginComponent implements OnInit, OnDestroy
+export class CityComponent implements OnInit, OnDestroy
 {
     loginForm: FormGroup;
     loginFormErrors: any;

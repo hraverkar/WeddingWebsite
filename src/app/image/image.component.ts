@@ -8,11 +8,11 @@ import * as $ from 'jquery';
 
 
 @Component({
-    selector: 'app-contact',
-    templateUrl: './contact-us.component.html',
-    styleUrls: ['./contact-us.component.scss']
+    selector: 'app-image',
+    templateUrl: './image.component.html',
+    styleUrls: ['./image.component.scss']
 })
-export class ContactUsComponent implements OnInit {
+export class ImageComponent implements OnInit {
     form: FormGroup;
     formErrors: any;
     private _unsubscribeAll: Subject<any>;

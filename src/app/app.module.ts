@@ -26,63 +26,39 @@ import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { HowWeMetComponent } from './howwemet/howwemet.component';
 import { HomeComponent } from './home/home.component';
-import {ContactUsComponent} from "./contact-us/contact-us.component";
-import {ShopComponent} from "./shop/shop.component";
+import { ImageComponent } from "./image/image.component";
+import { EventComponent } from "./event/event.component";
 import { SlideshowModule } from '../../public_api';
-import { LoginComponent } from './login/login.component';
-import {RegisterComponent} from "./register/register.component";
-import {ForgotPasswordComponent} from "./auth/forgot-password/forgot-password.component";
-import {ForgotPasswordModule} from "./auth/forgot-password/forgot-password.module";
-import {FaqComponent}  from "./help/faq.component";
-import {FaqModule}  from "./help/faq.module";
+import { CityComponent } from './city/city.component';
+import { RsvpComponent } from "./rsvp/rsvp.component";
+import { FaqModule } from "./help/faq.module";
 
 
 const appRoutes: Routes = [
     {
-        path      : '',
+        path: '',
         component: HomeComponent
     },
     {
-        path      : 'howwemet',
+        path: 'howwemet',
         component: HowWeMetComponent
     },
     {
-        path      : 'contact-us',
-        component: ContactUsComponent
+        path: 'image',
+        component: ImageComponent
     },
     {
-        path      : 'login',
-        component: LoginComponent
+        path: 'city',
+        component: CityComponent
     },
     {
-        path      : 'register',
-        component: RegisterComponent
+        path: 'rsvp',
+        component: RsvpComponent
     },
     {
-        path      : 'shop',
-        component: ShopComponent
+        path: 'event',
+        component: EventComponent
     },
-    {
-        path      : 'help',
-        component: FaqComponent
-    },
-    {
-        path      : 'login',
-        component : LoginComponent
-    },
-    {
-        path      : 'register',
-        component : RegisterComponent
-    },
-    {
-        path      : 'forgot-password',
-        component : ForgotPasswordComponent
-    }
-
-
-
-
-
 ];
 
 @NgModule({
@@ -90,13 +66,13 @@ const appRoutes: Routes = [
         AppComponent,
         HowWeMetComponent,
         HomeComponent,
-        ContactUsComponent,
-        ShopComponent,
-        LoginComponent,
-        RegisterComponent
+        ImageComponent,
+        EventComponent,
+        CityComponent,
+        RsvpComponent
 
     ],
-    imports     : [
+    imports: [
         SlideshowModule,
         BrowserModule,
         BrowserAnimationsModule,
@@ -127,13 +103,11 @@ const appRoutes: Routes = [
         // App modules
         LayoutModule,
         SampleModule,
-        ForgotPasswordModule,
         FaqModule
     ],
-    bootstrap   : [
+    bootstrap: [
         AppComponent
     ]
 })
-export class AppModule
-{
+export class AppModule {
 }

@@ -1,20 +1,18 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import * as $ from 'jquery';
-
-
 import { FuseConfigService } from '@fuse/services/config.service';
 import { fuseAnimations } from '@fuse/animations/index';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/internal/operators';
 
 @Component({
-    selector   : 'register',
-    templateUrl: './register.component.html',
-    styleUrls  : ['./register.component.scss'],
+    selector   : 'rsvp',
+    templateUrl: './rsvp.component.html',
+    styleUrls  : ['./rsvp.component.scss'],
     animations : fuseAnimations
 })
-export class RegisterComponent implements OnInit, OnDestroy
+export class RsvpComponent implements OnInit, OnDestroy
 {
     registerForm: FormGroup;
     registerFormErrors: any;
