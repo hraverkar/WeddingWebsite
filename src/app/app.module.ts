@@ -22,7 +22,6 @@ import { FuseProgressBarModule, FuseSidebarModule, FuseThemeOptionsModule } from
 import { fuseConfig } from 'app/fuse-config';
 
 import { AppComponent } from 'app/app.component';
-import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
 import { HowWeMetComponent } from './howwemet/howwemet.component';
 import { HomeComponent } from './home/home.component';
@@ -31,7 +30,6 @@ import { EventComponent } from "./event/event.component";
 import { SlideshowModule } from '../../public_api';
 import { CityComponent } from './city/city.component';
 import { RsvpComponent } from "./rsvp/rsvp.component";
-import { FaqModule } from "./help/faq.module";
 
 
 const appRoutes: Routes = [
@@ -101,9 +99,7 @@ const appRoutes: Routes = [
         FuseThemeOptionsModule,
 
         // App modules
-        LayoutModule,
         SampleModule,
-        FaqModule
     ],
     bootstrap: [
         AppComponent
